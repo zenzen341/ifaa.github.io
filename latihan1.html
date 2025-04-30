@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Menentukan bahwa dokumen ini menggunakan format HTML5 -->
+<html lang="en">
+<!-- Menandakan bahwa bahasa utama halaman ini adalah bahasa Inggris -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Mengatur encoding karakter agar mendukung berbagai karakter internasional -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Memastikan tampilan halaman dapat menyesuaikan dengan ukuran layar perangkat -->
+    <title>Input Bilangan</title>
+    <!-- Menetapkan judul halaman yang akan tampil di tab browser -->
+
+    <script>
+        // Fungsi untuk menghitung pengurangan dua bilangan
+        function kurang(){
+            // Mengambil nilai dari input dengan ID 'bilangan1' dan mengubahnya menjadi angka desimal
+            var bil1 = parseFloat(document.getElementById("bilangan1").value);
+            // Mengambil nilai dari input dengan ID 'bilangan2' dan mengubahnya menjadi angka desimal
+            var bil2 = parseFloat(document.getElementById("bilangan2").value);
+
+            // Jika nilai input bukan angka (NaN), maka nilainya dianggap 0.0
+            if(isNaN(bil1)) bil1 = 0.0;
+            if(isNaN(bil2)) bil2 = 0.0;
+
+            // Melakukan operasi pengurangan dari bil1 dikurangi bil2
+            var hasil = bil1 - bil2;
+
+            // Menampilkan hasil pengurangan pada elemen dengan ID 'hasil'
+            document.getElementById("hasil").innerText = "Hasil Pengurangan = " + hasil;
+        }
+    </script>
+</head>
+<body>
+    <!-- Judul utama yang tampil di halaman web -->
+    <h1>Masukkan Dua Bilangan</h1>
+
+    <!-- Formulir untuk memasukkan dua bilangan -->
+    <form>
+        <p>
+            <!-- Input teks untuk bilangan pertama, berukuran 11 karakter -->
+            Bilangan pertama: <input type="text" id="bilangan1" size="11">
+            <br>
+            <!-- Input teks untuk bilangan kedua, juga berukuran 11 karakter -->
+            Bilangan kedua: <input type="text" id="bilangan2" size="11">
+        </p>
+        <p>
+            <!-- Tombol yang akan memicu fungsi pengurangan saat diklik -->
+            <input type="button" value="Kurangkan" onclick="kurangi()">
+            <!-- Tombol untuk mereset atau menghapus semua isian form -->
+            <input type="reset" value="Ulang">
+        </p>
+    </form>
+
+    <!-- Elemen paragraf yang digunakan untuk menampilkan hasil pengurangan -->
+    <p id="hasil"></p>
+</body>
+</html>
