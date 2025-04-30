@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hari 6 - Kalkulator Infaq Harian</title>
+
+  <link rel="stylesheet" href="latihan2.css">
+  <!-- Menghubungkan halaman HTML dengan file CSS eksternal -->
+</head>
+
+<body>
+  <div class="container">
+    <!-- Container utama untuk membungkus semua isi halaman -->
+
+    <h1>Kalkulator Infaq Harian</h1>
+    <!-- Judul utama halaman -->
+
+    <p>Catat infaq yang kamu berikan setiap hari selama bulan Ramadhan.</p>
+    <!-- Deskripsi singkat tentang tujuan aplikasi -->
+
+    <input type="number" id="amountInput" placeholder="Masukkan nominal (Rp)">
+    <!-- Input angka untuk nominal infaq, punya id supaya bisa diakses dari JS -->
+
+    <button onclick="addInfaq()">Tambah Infaq</button>
+    <!-- Tombol yang akan menjalankan fungsi JavaScript addInfaq() saat diklik -->
+
+    <h3>Riwayat Infaq</h3>
+    <!-- Subjudul untuk daftar infaq yang sudah dicatat -->
+
+    <ul id="infaqList"></ul>
+    <!-- Tempat untuk menampilkan daftar infaq yang dimasukkan -->
+
+    <h3>Total Infaq: Rp <span id="totalAmount">0</span></h3>
+    <!-- Menampilkan jumlah total dari semua infaq yang sudah ditambahkan -->
+  </div>
+
+  <script src="latihan2.js"></script>
+  <!-- Menyisipkan file JavaScript eksternal untuk logika program -->
+</body>
+</html>
