@@ -1,0 +1,77 @@
+/* Mengatur gaya dasar untuk seluruh halaman */
+body{
+    font-family: arial, sans-serif;/* Mengatur jenis huruf */
+    background-color: #f0f0f0;/* Warna latar belakang halaman */
+    text-align: center;/* Memusatkan teks di seluruh body ke tengah (rata tengah) */
+}
+/* Gaya untuk bagian judul halaman */
+.judul{
+    color: white;/* Warna teks putih */
+    background-color: rgb(39, 82, 253);/* Warna biru terang untuk latar belakang */
+    padding: 10px 0;/* Ruang vertikal atas dan bawah 10px */
+}
+/* Gaya untuk navigasi/menu utama */
+.navigasi{
+    background-color: #003366; /* Warna Biru tua untuk latar belakang */
+    padding: 20px;/* Ruang vertikal atas dan bawah 10px */
+}
+/* Gaya untuk setiap link navigasi */
+.navigasi a{
+    font-weight: bold;/* Huruf tebal */
+    font-size: 16px;/* Ukuran huruf 16px */
+    color: white;/* Warna huruf putih */
+    padding: 7px;/* Ruang dalam 7px */
+    margin: 14px;/* Jarak antar link 14px */
+    text-decoration: none/* Menghapus garis bawah bawaan*/
+}
+/* Efek saat mouse diarahkan ke link navigasi */
+.navigasi a:hover {
+    text-decoration: underline;/* Menambahkan garis bawah saat hover */
+}
+/* Gaya untuk bagian sambutan selamat datang */
+.welcome{
+    text-align: center;/* Teks rata ke tengah */
+    margin: 30px 0;/* Jarak atas dan bawah 30px */
+
+}
+/* Gaya judul sambutan */
+.welcome h2{
+    background-color: #555;/* Latar belakang abu-abu gelap */
+    color: white;/* Teks putih */
+    display: inline-block;/* Supaya tidak selebar halaman, tapi bisa diberi padding */
+    padding: 10px;/* Ruang dalam 10px */
+    border-radius: 5px;/* Sudut membulat */
+    margin: 40px;/* Jarak sekitar 40px */
+}
+/* Container untuk artikel dan sidebar */
+.box{
+    display: flex;/* Mengatur konten secara horizontal */
+    justify-content: center;/* Pusatkan isi secara horizontal */
+    gap: 20px;/* Jarak antar elemen anak 20px */
+    padding: 40px 20px;/* Padding atas/bawah 40px, samping 20px */
+}
+/* Gaya kotak artikel utama */
+.artikel{
+    text-align: left;/* Teks rata kiri */
+    background-color: white;/* Latar putih */
+    padding: 20px;/* Ruang dalam 20px */
+    width: 600px;/* Lebar tetap 600px */
+    border-radius: 10px;/* Sudut membulat */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);/* Bayangan ringan */
+}
+.sidebar{
+    text-align: left;/* Teks rata kiri */
+    background-color: white;/* Latar putih */
+    padding: 20px;/* Ruang dalam 20px */
+    width: 300px;/* Lebar tetap 300px */
+    border-radius: 10px;/* Sudut membulat */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);/* Bayangan ringan */
+}
+/* Gaya bagian footer (kaki halaman) */
+.footer{
+    background-color: #222;/* Latar hitam pekat */
+    color: white;/* Teks putih */
+    text-align: center;/* Teks rata tengah */
+    padding: 1px;/* Ruang dalam 1px */
+    font-size: 14px;/* Ukuran huruf kecil */
+}

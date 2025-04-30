@@ -1,0 +1,49 @@
+body {
+    font-family: arial, sans-serif;      /* Jenis huruf standar yang nyaman dibaca */
+    background-color: #f0f0f0;           /* Warna latar belakang abu-abu terang */
+    text-align: center;                  /* Semua teks diatur rata tengah */
+}
+
+#judul {
+    color: blue;                         /* Judul berwarna biru */
+    font-size: 24px;                     /* Ukuran huruf sedang besar */
+}
+
+.deskripsi {
+    color: gray;                         /* Warna teks abu-abu (tidak mencolok) */
+    font-style: italic;                  /* Huruf dimiringkan */
+}
+
+.card {
+    background-color: white;             /* Warna dasar card putih */
+    padding: 15px;                       /* Spasi dalam 15px di semua sisi */
+    border-radius: 8px;                  /* Sudut kotak dibuat sedikit membulat */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Bayangan halus agar terlihat melayang */
+    width: 250px;                        /* Lebar card 250px */
+    margin: 10px auto;                   /* Otomatis berada di tengah, dengan jarak atas-bawah 10px */
+    transition: background-color 0.3s;   /* Efek transisi saat berubah warna (halus) */
+}
+
+.card:hover {
+    background-color: #ffe4e1;           /* Saat kursor disentuhkan, warna berubah jadi pink muda */
+}
+
+.box {
+    background-color: pink;              /* Kotak pink cerah */
+    width: 150px;
+    height: 150px;
+    border-radius: 90px;                 /* Sudut sangat membulat, hampir seperti lingkaran */
+    margin: 20px auto;                   /* Ditengah secara otomatis dengan margin atas bawah */
+}
+
+button {
+    background-color: dodgerblue;        /* Warna biru cerah khas tombol */
+    color: white;                        /* Teks putih agar kontras */
+    padding: 10px 15px;                  /* Spasi dalam tombol */
+    border: none;                        /* Tanpa garis pinggir */
+    cursor: pointer;                     /* Kursor berubah jadi tangan saat diarahkan */
+}
+
+button:hover {
+    background-color: darkblue;          /* Saat diarahkan, warna tombol jadi lebih gelap */
+}
