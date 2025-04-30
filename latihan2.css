@@ -1,0 +1,74 @@
+body { 
+    font-family: Arial, sans-serif;
+    /* Pakai font Arial supaya kelihatan modern dan bersih */
+
+    background-color: #f0f8ff;
+    /* Warna latar belakang biru muda (soft) */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Bikin konten di tengah-tengah layar secara vertikal dan horizontal */
+
+    margin: 0;
+    /* Hilangkan margin bawaan browser */
+}
+
+.container {
+    background-color: #fff;
+    /* Latar belakang putih untuk kontainer utama */
+
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    /* Tambah bayangan biar ada efek kedalaman */
+
+    border-radius: 10px;
+    /* Sudut membulat */
+
+    text-align: center;
+    /* Semua teks di dalam kontainer rata tengah */
+}
+
+h1 {
+    color: #4CAF50;
+    /* Judul berwarna hijau segar */
+}
+
+/* NOTE: duplikat h1 dihapus karena sama aja */
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    max-width: 300px;
+    /* Styling input: ukuran fleksibel dan rapi */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    /* Tombol hijau dengan teks putih dan pointer saat hover */
+}
+
+button:hover {
+    background-color: #45a049;
+    /* Efek saat hover: sedikit lebih gelap */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    /* Hilangkan bullet list dan padding bawaan */
+}
+
+ul li {
+    background-color: #e7f7e7;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    /* Styling list item: kotak hijau muda dengan sudut membulat */
+}
